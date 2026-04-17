@@ -17,6 +17,7 @@
         }
 
         body {
+
             margin: 0;
             background-color: #ffffff;
             padding: 0;
@@ -28,6 +29,7 @@
 
         .header {
             width: 1496px;
+            /* width: 100%; */
             display: flex;
             margin-top: 10px;
             padding: 20px;
@@ -42,7 +44,7 @@
             width: 50%;
             display: flex;
             justify-content: end;
-            align-items: end
+            align-items: end;
         }
 
         label {
@@ -53,7 +55,8 @@
 
         .hero {
             background-color: #feeae9;
-            width: 1496px;
+            max-width: 1496px;
+            flex-wrap: wrap;
             display: flex;
             margin-top: 10px;
             padding: 10px;
@@ -73,7 +76,7 @@
         }
 
         .description {
-            width: calc(100%/2);
+            min-width: calc(100%/2);
         }
 
         .description h1,
@@ -86,17 +89,25 @@
 
 
         .hero-img {
-            width: 50%;
+            min-width: 50%;
             display: flex;
             justify-content: end;
-            align-items: end
+            align-items: end;
         }
 
         .col-group {
             display: flex;
             flex-flow: row wrap;
-            width: 100%;
+            max-width: 100%;
             border-radius: 10px;
+        }
+
+        .categories {
+            max-width: 100%;
+        }
+
+        .categories h2 {
+            margin: 10px;
         }
 
         .watch {
@@ -107,12 +118,12 @@
             margin: 5px;
             padding: 5px;
             border-radius: 10px;
-            width: 483px;
+            min-width: 483px;
         }
 
         .bag {
             border: 2px solid #ff136f;
-            width: 483px;
+            min-width: 483px;
             color: #fffefd;
             margin: 5px;
             padding: 5px;
@@ -123,13 +134,21 @@
 
         .shoe {
             border: 2px solid #0969da;
-            width: 483px;
+            min-width: 483px;
             color: #fffefd;
             margin: 5px;
             padding: 5px;
             border-radius: 10px;
             box-sizing: content-box;
             background-color: #0969da;
+        }
+
+        .shoes-sec {
+            max-width: 100%;
+        }
+
+        .shoes-sec h2 {
+            margin: 10px;
         }
 
         .shoes {
@@ -139,8 +158,8 @@
             padding: 10px;
             box-shadow: 5px, 5px, 5px, gray;
             border-radius: 10px;
-            width: 483px;
-            height: 470px;
+            min-width: 483px;
+            min-height: 470px;
 
         }
 
@@ -153,10 +172,18 @@
 
         }
 
+        .backpack {
+            max-width: 100%;
+        }
+
+        .backpack h2 {
+            margin: 10px;
+        }
+
         .bags {
             box-sizing: border-box;
             border: 2px solid gray;
-            width: 483px;
+            min-width: 483px;
             margin: 10px;
             padding: 10px;
             border-radius: 10px;
@@ -185,7 +212,9 @@
         }
 
         .newsletter {
-            display: flex;width: 1496px;
+
+            display: flex;
+            max-width: 1496px;
             background-color: #feeae9;
             border-radius: 10px;
             height: 393px;
@@ -195,6 +224,8 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            margin-left: 10px;
+            flex-wrap: wrap;
         }
 
         .newsletter h2 {
@@ -205,7 +236,7 @@
         .newsletter input {
             padding: 10px;
             padding-right: 0;
-            width: 300px;
+            min-width: 300px;
             border-style: none;
             height: 45px;
             border-radius: 3px;
@@ -216,7 +247,7 @@
         .newsletter .btn2 {
             padding: 10px 20px 10px;
             border-radius: 3px;
-            height: 45px;
+            min-height: 45px;
             margin: 0;
             cursor: pointer;
         }
