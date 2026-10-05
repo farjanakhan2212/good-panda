@@ -19,10 +19,10 @@ check if origin exists:
 git remote -v 
 
 if it exists and is wrong:
-git remote set-url origin https://github.com/farjanakhan2212/React.git
+git remote set-url origin https://github.com/farjanakhan2212/good-panda.git
 
 if not exists:
-git remote add origin https://github.com/farjanakhan2212/React.git
+git remote add origin https://github.com/farjanakhan2212/good-panda.git
 
 Step7: pull remote changes if needed
 
